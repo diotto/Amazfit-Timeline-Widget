@@ -1,6 +1,6 @@
-[![latest release](https://img.shields.io/badge/latest%20release-v1.0.0.Beta-green.svg?style=flat-square) ![release date](https://img.shields.io/badge/release%20date-2019.00.00-orange.svg?style=flat-square)](https://github.com/GreatApo/Amazfit-Timeline-Widget/releases/latest)
+[![latest release](https://img.shields.io/badge/latest%20release-v1.0.0-green.svg?style=flat-square) ![release date](https://img.shields.io/badge/release%20date-2019.01.24-orange.svg?style=flat-square)](https://github.com/GreatApo/Amazfit-Timeline-Widget/releases/latest)
 
-# Amazfit Pace/Stratos/Verge Timeline Widget
+# Amazfit Timeline Widget
 
 Here is the first Calendar Events Widget for our Amazfits!
 
@@ -8,22 +8,23 @@ Here is the first Calendar Events Widget for our Amazfits!
 
 ### Features
 - This is a Pace/Stratos/Verge Widget
-- Shows your phone calendar event provided that they are pushed to watch by Amazmod [Amazmod Project](https://github.com/AmazMod/AmazMod)
+- Shows your phone calendar
+- Shows only future events and from the last 10 minutes
+
+In order to work, [Amazmod](https://github.com/AmazMod/AmazMod) (both phone and service/watch) must be installed, and calendar data forwarding should be enabled.
 
 
 ### Bugs / To Do
 - Amazmod has no on/off option (events are just pushed along battery/alarm data)
-- Date change indicator is similar to events = ugly (see image)
 - No interaction with the events items (data not used: account, description)
-- Shows all data, it should show future only (easy fixed but first events have to sorted)
-- Does not update
+- Time should constantly be updated
 
 
 
 ### Download
 
 Get a ready to use binary
- - From our [Github Releases](https://github.com/GreatApo/AmazfitPaceCalendarWidget/releases/latest)
+ - From our [Github Releases](https://github.com/GreatApo/Amazfit-Timeline-Widget/releases/latest)
 
 Or if you are hardcore, compile the source code with Android Studio.
 
@@ -33,15 +34,20 @@ Or if you are hardcore, compile the source code with Android Studio.
 To install this widget, you will need a PC with the ADB installed. Connect your Amazfit on your PC and fire up a terminal.
 
 ```shell
-adb uninstall com.dinodevs.timelinewidget
 adb install -r TimelineWidget.X.X.X.apk
 adb shell am force-stop com.huami.watch.launcher
 ```
 
+To uninstall:
+
+```shell
+adb uninstall com.dinodevs.timelinewidget
+```
 
 
-### Screenshots (Version 1.0.0 beta)
-![Amazfit Timeline Widget v1.0.0](other%20files/TimelineWidget-0.0.0.jpg)
+
+### Screenshots (Version 1.0.0)
+![Amazfit Timeline Widget v1.0.0](other%20files/TimelineWidget-1.0.0.jpg)
 
 
 
